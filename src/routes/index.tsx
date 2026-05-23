@@ -25,6 +25,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import heroImg from "@/assets/hero-engenheira.jpg";
+import logoAF from "@/assets/logo-af.jpeg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -66,7 +67,13 @@ function Index() {
       <header className="absolute inset-x-0 top-0 z-30">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8">
           <a href="#" className="flex items-center gap-2">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-primary/15 text-primary font-serif text-lg">AF</span>
+            <img
+              src={logoAF}
+              alt="AF Engenharia - Aline Ferreira"
+              width={48}
+              height={48}
+              className="h-12 w-12 rounded-full object-cover ring-2 ring-primary/30 shadow-sm"
+            />
             <div className="leading-tight">
               <p className="font-serif text-base text-foreground">AF Engenharia</p>
               <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Perícias Técnicas</p>
@@ -80,7 +87,7 @@ function Index() {
             <a href="#contato" className="hover:text-primary transition">Contato</a>
           </nav>
           <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
-            <Button className="rounded-full bg-foreground text-background hover:bg-foreground/90">
+            <Button className="btn-pulse rounded-full bg-[#25D366] text-white hover:bg-[#1ebe57]">
               <MessageCircle className="h-4 w-4" /> WhatsApp
             </Button>
           </a>
@@ -116,7 +123,7 @@ function Index() {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
-                  <Button size="lg" className="rounded-full bg-primary text-primary-foreground shadow-[var(--shadow-warm)] hover:bg-primary/90">
+                  <Button size="lg" className="btn-pulse rounded-full bg-[#25D366] text-white hover:bg-[#1ebe57]">
                     <MessageCircle className="h-4 w-4" /> Falar no WhatsApp
                   </Button>
                 </a>
@@ -162,7 +169,7 @@ function Index() {
               </div>
             </div>
             <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
-              <Button className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button className="btn-pulse rounded-full bg-[#25D366] text-white hover:bg-[#1ebe57]">
                 <MessageCircle className="h-4 w-4" /> Solicitar orçamento
               </Button>
             </a>
@@ -254,7 +261,7 @@ function Index() {
           </div>
           <div className="mt-10 text-center">
             <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="rounded-full bg-primary text-primary-foreground shadow-[var(--shadow-warm)] hover:bg-primary/90">
+              <Button size="lg" className="btn-pulse rounded-full bg-[#25D366] text-white hover:bg-[#1ebe57]">
                 <MessageCircle className="h-4 w-4" /> Solicitar orçamento sem compromisso
               </Button>
             </a>
@@ -292,7 +299,7 @@ function Index() {
           </p>
           <div className="mt-8">
             <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="rounded-full bg-primary text-primary-foreground shadow-[var(--shadow-warm)] hover:bg-primary/90">
+              <Button size="lg" className="btn-pulse rounded-full bg-[#25D366] text-white hover:bg-[#1ebe57]">
                 <MessageCircle className="h-4 w-4" /> Chamar no WhatsApp agora
               </Button>
             </a>
@@ -328,6 +335,17 @@ function Index() {
         </div>
         <p className="mx-auto mt-10 max-w-6xl text-xs text-muted-foreground">© {new Date().getFullYear()} AF Engenharia & Perícias Técnicas. Todos os direitos reservados.</p>
       </footer>
+
+      {/* Floating WhatsApp button */}
+      <a
+        href={WHATSAPP}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar no WhatsApp"
+        className="btn-pulse fixed bottom-5 right-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-lg hover:bg-[#1ebe57]"
+      >
+        <MessageCircle className="h-7 w-7" />
+      </a>
     </div>
   );
 }
