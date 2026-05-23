@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Emissão de ART, laudos técnicos, vistorias e regularização de imóveis com atendimento ágil e humanizado." },
       { name: "author", content: "AF Engenharia" },
       { property: "og:title", content: "AF Engenharia & Perícias Técnicas" },
-      { property: "og:description", content: "Soluções técnicas com precisão e confiança." },
+      { property: "og:description", content: "Emissão de ART, laudos técnicos, vistorias e regularização de imóveis com atendimento ágil e humanizado." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "AF Engenharia & Perícias Técnicas" },
+      { name: "twitter:description", content: "Emissão de ART, laudos técnicos, vistorias e regularização de imóveis com atendimento ágil e humanizado." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ac911eb9-8690-4178-a0cb-dccfadb71c97/id-preview-6a97204b--5d81d0c2-a534-410d-8196-1261a01e24c2.lovable.app-1779563193762.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ac911eb9-8690-4178-a0cb-dccfadb71c97/id-preview-6a97204b--5d81d0c2-a534-410d-8196-1261a01e24c2.lovable.app-1779563193762.png" },
     ],
     links: [
       {
