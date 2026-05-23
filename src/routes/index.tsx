@@ -24,7 +24,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import heroImg from "@/assets/hero-engenheira.jpg";
+import heroImg from "@/assets/hero-engenheira.png";
 import logoAF from "@/assets/logo-af.jpeg";
 
 export const Route = createFileRoute("/")({
@@ -179,7 +179,7 @@ function Index() {
 
       {/* Sobre */}
       <section id="sobre" className="px-5 py-24 md:px-8">
-        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-2 md:items-center">
+        <div className="mx-auto max-w-3xl">
           <div>
             <p className="text-xs uppercase tracking-[0.2em] text-primary">Sobre a AF</p>
             <h2 className="mt-4 font-serif text-4xl leading-tight text-foreground md:text-5xl">
@@ -192,19 +192,6 @@ function Index() {
               {["Técnica", "Precisão", "Confiança"].map((t) => (
                 <span key={t} className="rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs uppercase tracking-[0.18em] text-primary">{t}</span>
               ))}
-            </div>
-          </div>
-          <div className="relative">
-            <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-primary/20 to-accent/40 blur-2xl" />
-            <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card p-8">
-              <img
-                src={heroImg}
-                alt="Engenheira responsável"
-                loading="lazy"
-                width={800}
-                height={800}
-                className="aspect-square w-full rounded-2xl object-cover"
-              />
             </div>
           </div>
         </div>
