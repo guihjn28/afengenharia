@@ -66,17 +66,17 @@ function Index() {
       {/* Nav */}
       <header className="absolute inset-x-0 top-0 z-30">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8">
-          <a href="#" className="flex items-center gap-2">
+          <a href="#" className="flex items-center gap-3">
             <img
               src={logoAF}
               alt="AF Engenharia - Aline Ferreira"
-              width={48}
-              height={48}
-              className="h-12 w-12 rounded-full object-cover ring-2 ring-primary/30 shadow-sm"
+              width={64}
+              height={64}
+              className="h-14 w-14 rounded-full object-cover ring-2 ring-primary/30 shadow-sm md:h-16 md:w-16"
             />
             <div className="leading-tight">
-              <p className="font-serif text-base text-foreground">AF Engenharia</p>
-              <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Perícias Técnicas</p>
+              <p className="font-serif text-xl text-foreground md:text-2xl">AF Engenharia</p>
+              <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Perícias Técnicas</p>
             </div>
           </a>
           <nav className="hidden items-center gap-7 text-sm md:flex">
@@ -317,6 +317,12 @@ function Index() {
             <a href="https://instagram.com/afartconsultoria" target="_blank" rel="noopener noreferrer" className="flex gap-3 hover:text-primary transition">
               <Instagram className="h-5 w-5 text-primary" />
               <span>@afartconsultoria</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61566653625655" target="_blank" rel="noopener noreferrer" className="flex gap-3 hover:text-primary transition">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              <span>AF Engenharia</span>
             </a>
           </div>
         </div>
