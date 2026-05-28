@@ -314,9 +314,9 @@ function Index() {
               <MapPin className="h-5 w-5 text-primary" />
               <span><span className="block text-muted-foreground">Localização</span>Vargem Grande Paulista – SP</span>
             </div>
-            <a href="https://instagram.com/afartconsultoria" target="_blank" rel="noopener noreferrer" className="flex gap-3 hover:text-primary transition">
+            <a href="https://instagram.com/af.engenheira" target="_blank" rel="noopener noreferrer" className="flex gap-3 hover:text-primary transition">
               <Instagram className="h-5 w-5 text-primary" />
-              <span>@afartconsultoria</span>
+              <span>@af.engenheira</span>
             </a>
             <a href="https://www.facebook.com/profile.php?id=61566653625655" target="_blank" rel="noopener noreferrer" className="flex gap-3 hover:text-primary transition">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" viewBox="0 0 24 24" fill="currentColor">
