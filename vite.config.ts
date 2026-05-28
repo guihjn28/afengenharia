@@ -28,16 +28,6 @@ const renameServerOutputPlugin = (): Plugin => ({
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
-    prerender: {
-      enabled: true,
-      autoSubfolderIndex: true,
-      autoStaticPathsDiscovery: true,
-      crawlLinks: true,
-      failOnError: true,
-    },
-    spa: {
-      enabled: true,
-    },
   },
   vite: {
     plugins: [renameServerOutputPlugin()],
