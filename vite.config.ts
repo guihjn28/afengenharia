@@ -28,12 +28,6 @@ const renameServerOutputPlugin = (): Plugin => ({
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
-    prerender: {
-      enabled: false,
-    },
-    spa: {
-      enabled: true,
-    },
   },
   vite: {
     plugins: [renameServerOutputPlugin()],
