@@ -161,7 +161,7 @@ function Index() {
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">A partir de</p>
                 <p className="font-serif text-3xl text-foreground md:text-4xl">
-                  R$ 100,00 <span className="text-base font-sans text-muted-foreground">/ custo dos honorários</span>
+                  R$ 130,00 <span className="text-base font-sans text-muted-foreground">/ custo dos honorários</span>
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground">
                   *Taxa do CREA <strong className="text-foreground">não inclusa</strong> nesse valor. Válido somente para emissão de ART simples.
