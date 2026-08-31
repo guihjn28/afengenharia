@@ -31,7 +31,7 @@ async function fetchHtml(url) {
 }
 
 function cleanAndPrepareHtml(html, assets) {
-  // Remove dev-only scripts at the end of body (scroll restoration, react-refresh, etc.)
+  // Remove dev-only scripts (scroll restoration, react-refresh, stream barrier, etc.)
   html = html.replace(/<script\b[^>]*>.*?<\/script>/gs, (match) => {
     if (match.includes("/@react-refresh")) return "";
     if (match.includes("$tsr-stream-barrier")) return "";
@@ -41,29 +41,17 @@ function cleanAndPrepareHtml(html, assets) {
   });
 
   // Replace dev CSS with production CSS
-  html = html.replace(
-    /\/src\/styles\.css[^"]*"/g,
-    `/assets/${assets.css}"",
-  );
+  html = html.replace(/\/src\/styles\.css[^"]*/g, `/assets/${assets.css}`);
 
   // Replace dev asset paths with production hashed assets
-  html = html.replace(
-    /\/src\/assets\/logo-af\.jpeg/g,
-    `/assets/${assets.logo}`,
-  );
-  html = html.replace(
-    /\/src\/assets\/hero-engenheira\.png/g,
-    `/assets/${assets.hero}`,
-  );
+  html = html.replace(/\/src\/assets\/logo-af\.jpeg/g, `/assets/${assets.logo}`);
+  html = html.replace(/\/src\/assets\/hero-engenheira\.png/g, `/assets/${assets.hero}`);
 
   // Remove data-tsd-source attributes used by dev tools
   html = html.replace(/\sdata-tsd-source="[^"]*"/g, "");
 
   // Remove tanstack-router-dev-styles link if present
-  html = html.replace(
-    /<link[^>]*data-tanstack-router-dev-styles[^>]*>\n?/g,
-    "",
-  );
+  html = html.replace(/<link[^>]*data-tanstack-router-dev-styles[^>]*>\n?/g, "");
 
   // Add production JS entry points before closing </body>
   const scripts = assets.js
